@@ -9,24 +9,22 @@
       background: #fff;
       border-bottom: 1px solid #eee;
   
-      .search {
-        display: flex;
-        align-items: center;
-        gap: 10px;
   
-        .input {
-          border: none;
-          border-bottom: 1px solid #000;
-          outline: none;
-          padding: 5px;
-        }
-      }
-  
+  .adress{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    h4{
+      font-family: sans-serif;
+      font-weight: 100;
+    }
+  }
       .logo {
         display: flex;
         align-items: center;
         gap: 10px;
-  
+ 
         .logoimg {
           width: 50px;
           height: 50px;
@@ -39,10 +37,11 @@
             font-weight: bold;
           }
   
-          p {
+          .p {
             margin: 0;
-            font-size: 14px;
-            color: #666;
+            font-size: 15px;
+            color:black;
+            font-weight: 200;
           }
         }
       }
