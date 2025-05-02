@@ -1,0 +1,44 @@
+.hero {
+  background-image: url("../../../../../public/images/hero-background.avif");
+  background-attachment: fixed; // <-- Вот оно
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 550px;
+  .content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .block_text {
+      margin-top: 150px;
+      background-color: #5c5adb;
+      width: 500px;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 40px;
+      }
+      h3 {
+        color: white;
+        font-weight: 600;
+        font-size: 25px;
+      }
+      button {
+        padding: 10px 20px;
+        background: transparent;
+        border: #1d1d36 2px solid;
+        color: white;
+        transition: 0.4s;
+        font-size: 15px;
+        font-weight: 700;
+        &:hover {
+          background: #1d1d36;
+        }
+      }
+    }
+  }
+}
