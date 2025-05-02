@@ -1,7 +1,6 @@
 .header {
   width: 100%;
-  position: sticky;
-  top: 0;
+
   .topbar {
     display: flex;
     align-items: center;
@@ -10,50 +9,54 @@
     background: #fff;
     border-bottom: 1px solid #eee;
 
-    .search {
+
+.adress{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  h4{
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+}
+    .logo {
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      padding: 25px 0px;
-      background: #fff;
-      border-bottom: 1px solid #eee;
-  
-  
-  .adress{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+      gap: 10px;
 
-    h4{
-      font-family: sans-serif;
-      font-weight: 100;
+      .logoimg {
+        width: 50px;
+        height: 50px;
+      }
+
+      .logotext {
+        h1 {
+          margin: 0;
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .p {
+          margin: 0;
+          font-size: 15px;
+          color:black;
+          font-weight: 200;
+        }
+      }
     }
-  }
-      .logo {
+
+    .useractions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .loginlink {
         display: flex;
         align-items: center;
-        gap: 10px;
- 
-        .logoimg {
-          width: 50px;
-          height: 50px;
-        }
-  
-        .logotext {
-          h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: bold;
-          }
-  
-          .p {
-            margin: 0;
-            font-size: 15px;
-            color:black;
-            font-weight: 200;
-          }
-        }
-
+        gap: 5px;
+        color: #000;
+        text-decoration: none;
       }
 
       .socialicons {
