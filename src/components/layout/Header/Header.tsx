@@ -5,47 +5,46 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaUserCircle } from "re
 import { FiSearch } from "react-icons/fi";
 import scss from "./Header.module.scss";
 import images from "../../../../public/images.jpg";
+import { FaLocationDot, FaPhone } from "react-icons/fa6";
+
 const Header = () => {
   return (
     <header className={scss.header}>
       <div className={scss.topbar}>
-        <div className={scss.search}>
-          <FiSearch size={20} />
-          <input className={scss.input} type="text" placeholder="Search..." />
-        </div>
-
         <div className={scss.logo}>
           <Image src={images} alt="Logo" width={50} height={50} className={scss.logoimg} />
           <div className={scss.logotext}>
             <h1 className={scss.h1}>Бат МУ</h1>
-            <p className={scss.p}>Middle School</p>
+            <h4 className={scss.p}>Университет</h4>
           </div>
         </div>
+<div className={scss.adress}>
+  <h4 >batmu@gmail.com</h4>
+  <h4> <span><FaPhone /></span> 0552 10-21-79</h4>
+  <h4><span><FaLocationDot /> пр. Чынгыз Айтматова</span></h4>
 
+</div>
         <div className={scss.useractions}>
-          <Link href="/login" className={scss.loginlink}>
-            <FaUserCircle size={24} />
-            <span>Log In</span>
-          </Link>
+       
           <div className={scss.socialicons}>
-            <FaFacebookF />
+          <FaInstagram />
             <FaTwitter />
-            <FaInstagram />
             <FaYoutube />
+            <FaFacebookF />
+
           </div>
         </div>
       </div>
 
       <nav className={scss.bottomnav}>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/academics">Academics</Link>
-        <Link href="/news">News</Link>
-        <Link href="/events">Events</Link>
-        <Link href="/students">Students</Link>
-        <Link href="/parents">Parents</Link>
-        <Link href="/admissions">Admissions</Link>
-        <Link href="/contact">Contact</Link>
+        <Link href="/">Университет</Link>
+        <Link href="/about">AVN</Link>
+        <Link href="/news">Жанылыктар</Link>
+        <Link href="/events">Билим берүү</Link>
+        <Link href="/students">Окуялар</Link>
+        <Link href="/admissions">Кабыл алуу</Link>
+        <Link href="/admissions">Бүтүрүүчүлөр</Link>
+        <Link href="/contact">Байланыш</Link>
       </nav>
     </header>
   );
